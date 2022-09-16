@@ -25,6 +25,11 @@ const routes: Array<RouteConfig> = [
     name: "portfolio",
     component: () => import("../views/PortfolioView.vue"),
   },
+  {
+    path: "/order",
+    name: "order",
+    component: () => import("../views/OrderView.vue"),
+  },
 ];
 
 const router = new VueRouter({
