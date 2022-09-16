@@ -11,6 +11,12 @@
         <v-carousel-item src="@/assets/s11.jpg"> </v-carousel-item>
       </v-carousel>
     </div>
+    <slot />
+    <div class="order">
+      <router-link to="/order">
+        <v-img width="900" src="@/assets/order.png" />
+      </router-link>
+    </div>
   </div>
 </template>
 
@@ -29,6 +35,11 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+.order {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 .col {
   padding: 5% 20% 1% 20%;
   display: flex;

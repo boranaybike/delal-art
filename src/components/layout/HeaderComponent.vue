@@ -28,7 +28,7 @@
     </v-app-bar>
   </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Qwitcher+Grypen&display=swap");
 a {
   text-decoration: none;
