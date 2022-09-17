@@ -1,27 +1,19 @@
 <template>
   <div class="order">
-    <v-row>
-      <v-col cols="6">
-        <div class="container">
-          <div class="title">Siparişleriniz için,</div>
-          <div id="subtitle">
-            <div>
-              <v-icon color="#f77f53">mdi-email-outline</v-icon> mail adresim üzerinden benimle iletişime
-              geçebilirsiniz:
-            </div>
-            <div>
-              <v-icon color="#f77f53">mdi-instagram</v-icon> instagram adresim üzerinden benimle iletişime
-              geçebilirsiniz: @delaleylem.art
-            </div>
-            <div><v-icon color="#f77f53">mdi-shopping</v-icon>shoppier hesabımdan sipariş verebilirsiniz:</div>
-          </div>
+    <div class="container">
+      <div class="title">Siparisleriniz için,</div>
+      <div id="subtitle">
+        <div>
+          <v-icon color="#f77f53">mdi-email-outline</v-icon> mail adresim üzerinden benimle iletisime geçebilirsiniz:
         </div>
-      </v-col>
-
-      <v-col cols="6">
-        <v-img contain src="@/assets/eyes0.jpg"> </v-img>
-      </v-col>
-    </v-row>
+        <div>
+          <v-icon color="#f77f53">mdi-instagram</v-icon> instagram adresim üzerinden benimle iletisime geçebilirsiniz:
+          @delaleylem.art
+        </div>
+        <div><v-icon color="#f77f53">mdi-shopping</v-icon>shoppier hesabımdan siparis verebilirsiniz:</div>
+      </div>
+    </div>
+    <v-img contain style="width: 60%; left: 45%" src="@/assets/eyes0.jpg"> </v-img>
   </div>
 </template>
 
@@ -38,15 +30,19 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:ital,wght@1,300&family=Qwitcher+Grypen&display=swap");
 .container {
-  width: 30%;
+  width: 40%;
   z-index: 2;
   position: absolute;
-  left: 30%;
+  left: 20%;
   top: 20%;
-  background-color: white;
+  padding: 3%;
+  background-color: #f6f5f5;
 }
 .title {
+  font-family: "Abel", sans-serif !important;
+
   padding: 5%;
   font-size: 30px !important;
   color: #f55b22;
@@ -54,11 +50,12 @@ export default Vue.extend({
 #subtitle > div {
   text-align: left;
   font-size: 20px;
-  color: #f77f53;
+  color: burlywood;
   padding: 1% 0;
 }
 .order {
-  padding: 15% 15% 5% 15%;
+  font-family: "Abel", sans-serif;
+  padding: 10% 15% 5% 15%;
 }
 .col {
   padding: 1%;
