@@ -32,6 +32,10 @@ nav {
   padding: 30px;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav a {
   font-weight: bold;
   color: #2c3e50;
