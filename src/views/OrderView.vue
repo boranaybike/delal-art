@@ -5,15 +5,45 @@
       <div id="subtitle">
         <div>
           <v-icon color="#f77f53">mdi-email-outline</v-icon> mail adresim üzerinden benimle iletisime geçebilirsiniz:
+          eylmuyank@gmail.com
         </div>
         <div>
           <v-icon color="#f77f53">mdi-instagram</v-icon> instagram adresim üzerinden benimle iletisime geçebilirsiniz:
           @delaleylem.art
         </div>
-        <div><v-icon color="#f77f53">mdi-shopping</v-icon>shoppier hesabımdan siparis verebilirsiniz:</div>
+        <div>
+          <v-icon color="#f77f53">mdi-shopping</v-icon>shoppier hesabımdan siparis verebilirsiniz: delaleylemart
+        </div>
       </div>
     </div>
-    <v-img contain style="width: 60%; left: 45%" src="@/assets/eyes0.jpg"> </v-img>
+    <v-img contain style="width: 60%; left: 45%" src="@/assets/eyes3.jpg"> </v-img>
+    <div class="cost">
+      <v-row>
+        <v-col cols="12" sm="6">
+          <v-img contain style="width: 100%" src="@/assets/yagli-boya0.png"> </v-img>
+        </v-col>
+        <v-col cols="12" sm="6">
+          <v-img contain style="width: 100%" src="@/assets/yagli-boya1.png"> </v-img>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col cols="12" sm="6">
+          <v-img contain style="width: 100%" src="@/assets/akrilik0.png"> </v-img>
+        </v-col>
+        <v-col cols="12" sm="6">
+          <v-img contain style="width: 100%" src="@/assets/akrilik1.png"> </v-img>
+        </v-col>
+      </v-row>
+    </div>
+    <div class="container2">
+      <div id="subtitle">
+        <div>
+          Tablolarda genellikle kullandıgım ve resimler için uygun gördügüm ölçüler verilmistir. Tablodakiler dısında
+          farklı bir sekil ve ölçüde siparis vermek, pres tuval fiyatları hakkında bilgi almak ya da öneri almak
+          isterseniz lütfen benimle iletisime geçiniz.
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -35,15 +65,26 @@ export default Vue.extend({
   width: 40%;
   z-index: 2;
   position: absolute;
-  left: 20%;
-  top: 20%;
+  left: 15%;
+  top: 10%;
   padding: 3%;
   background-color: #f6f5f5;
 }
+.container2 {
+  margin: auto;
+  width: 80%;
+  padding: 2%;
+  background-color: #f6f5f5;
+}
+
+.container2 #subtitle > div {
+  font-size: 20px;
+  text-align: center;
+}
+
 .title {
   font-family: "Abel", sans-serif !important;
-
-  padding: 5%;
+  padding: 0 0 2% 0;
   font-size: 30px !important;
   color: #f55b22;
 }
@@ -59,5 +100,8 @@ export default Vue.extend({
 }
 .col {
   padding: 1%;
+}
+.row {
+  padding: 5%;
 }
 </style>
