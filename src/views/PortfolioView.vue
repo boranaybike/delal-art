@@ -1,24 +1,21 @@
 <template>
   <div class="portfolio">
     <v-row>
-      <v-col class="d-flex child-flex" cols="4">
-        <v-img contain src="@/assets/1.jpg"> </v-img>
-      </v-col>
-      <v-col class="d-flex child-flex" cols="4">
+      <v-col cols="12" sm="4">
         <v-img contain src="@/assets/2.jpg"> </v-img>
       </v-col>
-      <v-col class="d-flex child-flex" cols="4">
+      <v-col cols="12" sm="4">
         <v-img contain src="@/assets/3.jpg"> </v-img>
+      </v-col>
+      <v-col cols="12" sm="4">
+        <v-img contain src="@/assets/4.jpg"> </v-img>
       </v-col>
     </v-row>
     <v-row>
-      <v-col class="d-flex child-flex" cols="4">
-        <v-img contain src="@/assets/4.jpg"> </v-img>
-      </v-col>
-      <v-col class="d-flex child-flex" cols="4">
+      <v-col cols="12" sm="4">
         <v-img contain src="@/assets/5.jpg"> </v-img>
       </v-col>
-      <v-col class="d-flex child-flex" cols="4">
+      <v-col cols="12" sm="4">
         <v-img contain src="@/assets/6.jpg"> </v-img>
       </v-col>
     </v-row>
@@ -43,5 +40,10 @@ export default Vue.extend({
 }
 .col {
   padding: 1%;
+}
+@media screen and (max-width: 800px) {
+  .portfolio {
+    padding: 30% 20% 5% 20%;
+  }
 }
 </style>
