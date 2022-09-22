@@ -10,7 +10,7 @@
     <slot />
     <div class="order">
       <router-link to="/order">
-        <v-img width="900" src="@/assets/order.png" />
+        <v-img class="order-image" src="@/assets/order.png" />
       </router-link>
     </div>
   </div>
@@ -47,9 +47,19 @@ export default Vue.extend({
   align-items: center;
   justify-content: center;
 }
+.order-image {
+  width: 55vw;
+}
 @media screen and (max-width: 800px) {
   .head {
     padding: 15% 20% 1% 20%;
+  }
+  .carousel {
+    padding: 0 1% 3% 1%;
+  }
+
+  .order-image {
+    width: 100vw;
   }
 }
 </style>

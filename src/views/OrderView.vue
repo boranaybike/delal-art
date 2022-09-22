@@ -11,12 +11,19 @@
           <v-icon color="#f77f53">mdi-instagram</v-icon> instagram adresim üzerinden benimle iletisime geçebilirsiniz:
           @delaleylem.art
         </div>
+      </div>
+    </div>
+    <v-img class="image" contain src="@/assets/eyes3.jpg"> </v-img>
+
+    <div class="container2">
+      <div id="subtitle">
         <div>
-          <v-icon color="#f77f53">mdi-shopping</v-icon>shoppier hesabımdan siparis verebilirsiniz: delaleylemart
+          Tablolarda genellikle kullandıgım ve resimler için uygun gördügüm ölçüler verilmistir. Tablodakiler dısında
+          farklı bir sekil ve ölçüde siparis vermek, pres tuval fiyatları hakkında bilgi almak ya da öneri almak
+          isterseniz lütfen benimle iletisime geçiniz.
         </div>
       </div>
     </div>
-    <v-img contain style="width: 60%; left: 45%" src="@/assets/eyes3.jpg"> </v-img>
     <div class="cost">
       <v-row>
         <v-col cols="12" sm="6">
@@ -35,15 +42,6 @@
         </v-col>
       </v-row>
     </div>
-    <div class="container2">
-      <div id="subtitle">
-        <div>
-          Tablolarda genellikle kullandıgım ve resimler için uygun gördügüm ölçüler verilmistir. Tablodakiler dısında
-          farklı bir sekil ve ölçüde siparis vermek, pres tuval fiyatları hakkında bilgi almak ya da öneri almak
-          isterseniz lütfen benimle iletisime geçiniz.
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -61,6 +59,10 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:ital,wght@1,300&family=Qwitcher+Grypen&display=swap");
+.image {
+  width: 60%;
+  left: 45%;
+}
 .container {
   width: 40%;
   z-index: 2;
@@ -71,12 +73,10 @@ export default Vue.extend({
   background-color: #f6f5f5;
 }
 .container2 {
-  margin: auto;
   width: 80%;
   padding: 2%;
   background-color: #f6f5f5;
 }
-
 .container2 #subtitle > div {
   font-size: 20px;
   text-align: center;
@@ -103,5 +103,37 @@ export default Vue.extend({
 }
 .row {
   padding: 5%;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 50%;
+    top: 10vh;
+  }
+
+  .order {
+    padding: 15vh 10vw 5vh 10vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .image {
+    width: 100%;
+    left: 0;
+  }
+  .container {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  .container2 {
+    width: 100%;
+
+    margin: auto;
+    z-index: 2;
+  }
+  .order {
+    padding: 15vh 10vw 5vh 10vw;
+  }
 }
 </style>

@@ -8,7 +8,7 @@
               <v-img src="@/assets/1.jpg"></v-img>
 
               <v-card-title>
-                <div class="head">satıştaki tablolar</div>
+                <div class="head">Satıştaki Tablolar</div>
               </v-card-title>
             </v-card></router-link
           ></v-hover
